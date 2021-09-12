@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de <SearchScreen />) debe de mostrar batman y le input con el valor sel querystring 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    SearchScreen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="find your hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn m-1 btn-block btn-outline-primary"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="card mb-3"
+        style={
+          Object {
+            "maxWidth": 300,
+          }
+        }
+      >
+        <img
+          alt="Batman"
+          src="./assets/heroes/dc-batman.jpg"
+        />
+        <div
+          className="col-md-8"
+        >
+          <div
+            className="card-body"
+          >
+            <h5
+              className="card-title"
+            >
+              Batman
+            </h5>
+            <p
+              className="card-text"
+            >
+              Bruce Wayne
+            </p>
+            <p
+              className="card-text"
+            >
+              <small
+                className="text-muted"
+              >
+                Detective Comics #27
+              </small>
+            </p>
+            <a
+              href="/hero/dc-batman"
+              onClick={[Function]}
+            >
+              Mas...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas de <SearchScreen />) debe de mostrar la alerta de error si no se encuentra el hero 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    SearchScreen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="find your hero"
+          type="text"
+          value="batman-no-existe"
+        />
+        <button
+          className="btn m-1 btn-block btn-outline-primary"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+        id="divNoExiste"
+      >
+        There is no a hero with 
+        batman-no-existe
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas de <SearchScreen />) debe de mostrarse correctamente con valores por defecto 1`] = `
+<div
+  className="container"
+>
+  <h1>
+    SearchScreen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="find your hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn m-1 btn-block btn-outline-primary"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+        id="divBuscaAlgo"
+      >
+        Search a hero
+      </div>
+    </div>
+  </div>
+</div>
+`;
